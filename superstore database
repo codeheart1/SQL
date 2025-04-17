@@ -28,18 +28,22 @@ VALUES
 
 #For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
 
+#Use a SELECT statement to order the items by price.
 SELECT category,item_name,price
 FROM superstore
 ORDER BY price ASC;
 
+#Show a statistic about the item prices
 SELECT MIN(category),(item_name),(price)
 FROM superstore
 ORDER BY price ASC;
 
+#Show a statistic about the price for items in the category of "Kitchen Supplies". 
 SELECT min(category),(item_name),(price)
 FROM superstore
 WHERE category='Kitchen Supplies';
 
+# used a clause statement to order items by average_rating
 SELECT category,item_name,price,average_rating
 FROM superstore
 WHERE category='Furnishings'
